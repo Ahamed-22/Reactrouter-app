@@ -9,7 +9,7 @@ export default function CourseCategory() {
   const params = useParams();
   console.log(params);
     useEffect(() => {
-    fetch("http://localhost:5173/products.json")
+    fetch("https://reactrouter-coursesapp.netlify.app/products.json")
       .then((response) => response.json())
       .then((result) => {
         if (result && result.data.length > 0) {
